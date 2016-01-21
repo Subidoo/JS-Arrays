@@ -2,41 +2,60 @@
 
 
 var arr = [10,20,30];
-//Create a function named 'first' that is given 'arr' as the argument and  returns the first item in the given array.
+//Create a function named 'first' that is given 'arr' as the argument 
+//and  returns the first item in the given array.
 
   //Code Here
+function first(foo) {
+  return foo[0];
+}
 
+first(arr);
 
 //Next problem
 
 
 
 var arr = [40,50,60];
-//Create a function named 'last' that is given 'arr' as the argument and returns the last item in the given array.
+//Create a function named 'last' that is given 'arr' as the argument and 
+//returns the last item in the given array.
 
 
   //Code Here
-
-
+function last(foo) {
+  return foo.slice(-1)[0];
+}
+last(arr);
 //Next Problem
 
 
 var family = ['Tyler', 'Jordyn', 'Ryan', 'Chelsey', 'Ireland'];
-//Create a function named 'looper' that is given family as it's only argument, loops through the given array, and alerts every item in the array.
+//Create a function named 'looper' that is given family as it's only 
+//argument, loops through the given array, and alerts every item in the 
+//array.
 
   //Code Here
-
+function looper(foo) {
+  for (var i = 0; i <= family.length; i++) {
+      alert(foo[i]);
+  }
+}
+looper(family);
 
 //Next problem
 
 
 
 var letters = ['A', 'B', 'C', 'D', 'E'];
-//Write a function called reversedLooper that is given letters as it's only argument and loops through the given array backwards alerting every item in the array starting at the end.
+//Write a function called reversedLooper that is given letters as it's 
+//only argument and loops through the given array backwards alerting 
+//every item in the array starting at the end.
 
   //Code Here
+function reversedLooper() {
 
-
+}
+reversedLooper(letters);
 //Next Problem
 
 
