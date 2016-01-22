@@ -83,9 +83,9 @@ var nums = [1,2,34,54,55,34,32,11,19,17,54,66,13];
 var evens = [];
 var odds = [];
 //Write a function called divider that is given three arguments, nums, evens, 
-// and odds. Have divider return an Array with the first item in the array 
-// being the evens array (all the even values from nums) and the second 
-// item in the Array being the odds array(all the odd values from nums).
+//and odds. Have divider return an Array with the first item in the array 
+//being the evens array (all the even values from nums) and the second 
+//item in the Array being the odds array(all the odd values from nums).
 
 
 
@@ -147,10 +147,11 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
   }
     return list;
 }
-removeItem(myGroceryList, 'chips') --> ['pizza', 'hotpockets', 'MtnDew', 'corndogs'];
-addItem(myGroceryList, 'Jerky') --> ['pizza', 'hotpockets', 'MtnDew', 'corndogs', 'Jerky'];
+//removeItem(myGroceryList, 'chips') --> ['pizza', 'hotpockets', 'MtnDew', 'corndogs'];
+//addItem(myGroceryList, 'Jerky') --> ['pizza', 'hotpockets', 'MtnDew', 'corndogs', 'Jerky'];
 
-
+function addItem(list, item) {
+}
 
 //Next Problem
 
