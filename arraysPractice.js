@@ -90,8 +90,20 @@ var odds = [];
 
 
   //Code Here
+function divider(foo) {
+  var evens = [];
+  var odds = [];
+  for (var i = 0; i < foo.length; i++) {
+    if (foo[i]%2===0) {
+      evens.push(foo[i]);
+    } 
+    else {odds.push(foo[i]);}
+  }
+  var array = [evens,odds];
+  return array;
+}
 
-
+divider(nums);
 //Next Problem
 
 
@@ -106,17 +118,30 @@ var numbers = [0,3,4,5,6,7,9,14,17,24,25,26,29,30];
 //it's not, return false
 
   //Code Here
-
-
+function finder(numbers) {
+  var random = getRandomArbitrary();
+  console.log(random);
+    if(numbers.indexOf(random) >= 0) {
+      return true;
+    }
+    else {
+      return false;
+    }
+  }
+finder(numbers);
 //Next problem
 
 
 
 var str = 'this is my sentence';
-//Write a function called reverse that takes a given str as it's only argument and returns that string after it's been reversed
+//Write a function called reverse that takes a given str as it's only 
+//argument and returns that string after it's been reversed
 
   //Code Here
-
+function reverse(foo) {
+  return foo.split('').reverse().join('');
+}
+reverse(str);
 
 //Next Problem
 
@@ -281,15 +306,15 @@ var data = [
 
 
 
-/*A very clean way to pass around large LISTS (arrays) of COLLECTIONS (objects)
-of Data is to have an Array full of objects. */
+/*A very clean way to pass around large LISTS (arrays) of COLLECTIONS 
+(objects) of Data is to have an Array full of objects. */
 
 //Create an empty array called users.
 
   //Code Here
 
-/*Now add three user objects to your users array. Each user object should contain the
-following properties. name, email, password, username.*/
+/*Now add three user objects to your users array. Each user object should 
+contain the following properties. name, email, password, username.*/
 
 //include this as one of the objects in your array.
 var user1 = {
@@ -302,12 +327,14 @@ var user1 = {
 //Your Code Here
 
 /*Now you have a very common data structure. Twitter is a good use case.
-It's easy to imagine that your followers list on Twitter is an Array full or objects
-and those objects contain properties about the specific person you follow.*/
+It's easy to imagine that your followers list on Twitter is an Array full or
+objects and those objects contain properties about the specific person you 
+follow.*/
 
-/*Now let's say that Tyler decided to delete his account. Loop through your array of
-objects until you find Tyler's account (use tylermcginnis33@gmail.com to find him).
-Once you find the particular index he's located in, delete him from the array.*/
+/*Now let's say that Tyler decided to delete his account. Loop through your 
+array of objects until you find Tyler's account (use tylermcginnis33@gmail.com 
+to find him). Once you find the particular index he's located in, delete 
+him from the array.*/
 
   //Code Here
 
