@@ -176,17 +176,26 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 //addItem(myGroceryList, 'Jerky') --> ['pizza', 'hotpockets', 'MtnDew', 'corndogs', 'Jerky'];
 
 function addItem(list, item) {
+  list.push(item);
+  return list;
 }
 
 //Next Problem
 
 
 
-//Write a function called maker that creates an array, fills that array with numbers from 1 to 215, then returns the array.
+//Write a function called maker that creates an array, fills that array 
+//with numbers from 1 to 215, then returns the array.
 
   //Code Here
-
-
+function maker() {
+  var arr = [];
+  for (var i = 0; i < 215; i++) {
+    arr.unshift(i+1);
+  }
+  return arr.reverse();
+}
+maker();
 
 //Next Problem
 
@@ -196,8 +205,14 @@ var numbers = [5, '9', 16, 19, '25', '34', 48];
 //array after adding ten to each item in numbers. *Verify your answer is correct. --> [15, 19, 26, 29, 35, 44, 58]
 
   //Code Here
-
-
+function addTen(foo) {
+  var woo = [];
+  for (var i = 0; i < foo.length; i++) {
+    woo.push(foo[i] + 10);
+  }
+  return woo;
+}
+addTen(numbers);
 
 //Next Problem
 
