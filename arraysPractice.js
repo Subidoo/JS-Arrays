@@ -208,9 +208,9 @@ var numbers = [5, '9', 16, 19, '25', '34', 48];
 function addTen(foo) {
   var woo = [];
   for (var i = 0; i < foo.length; i++) {
-    woo.push(foo[i] + 10);
-  }
-  return woo;
+    woo.push(parseInt(foo[i])+10);
+    }
+    return woo;
 }
 addTen(numbers);
 
@@ -229,18 +229,33 @@ for(var i = 0; i < num2; i++){
   arr2.push(i);
 }
 //Above is some code that adds a random number of values to both arr1 and arr2.
-//Write a function called 'longer' that is given arr1 and arr2 as it's only arguments. Return the array which is longest.
+//Write a function called 'longer' that is given arr1 and arr2 as it's only arguments. 
+//Return the array which is longest.
 
   //Code Here
+function longer(foo, woo) {
+  if(foo.length < woo.length) {
+    return woo;
+  }
+    else {
+      return foo;
+    }
 
-
+}
+longer(arr1, arr2);
 /*As a continuation of the previous problem, write another function called 'both'.
   Your 'both' function will be given two arguments, arr1 and arr2 (from the previous example)
   'both' should return a new array full of numbers that are found in both arr1 and arr2.
 */
 
   //Code Here
-  
+ function both(foo, woo) {
+  var newarr = [];
+    newarr = foo.concat(woo);
+    return newarr;
+ }
+ both(arr1, arr2);
+
   
   
 
@@ -280,6 +295,9 @@ array with those four objects. After that console.log the length of the Array an
 sure that it's equal to 4. */
 
   //Code Here
+  function fillArray() {
+
+  }
 
 /*Now let's say Cahlan has a mental breakdown and has to take a leave of absence to 'find himself'.
 Loop through your devMountainEmployees until you find cahlan, then remove him from the array.*/
