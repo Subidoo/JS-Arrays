@@ -296,17 +296,26 @@ sure that it's equal to 4. */
 
   //Code Here
   function fillArray() {
+    devMountainEmployees.push(tyler, cahlan, ryan, colt);
+    console.log(devMountainEmployees.length);
 
   }
+  fillarray();
 
 /*Now let's say Cahlan has a mental breakdown and has to take a leave of absence to 'find himself'.
 Loop through your devMountainEmployees until you find cahlan, then remove him from the array.*/
 
   //Code Here
 
+function removeObj(foo, woo) {
+  var removed = foo.indexOf(woo);
+    if(removed !== -1) {
+      foo.splice(removed, 1);
+    }
+    return foo;
+  }
 
-
-
+removeObj(devMountainEmployees, cahlan);
 //NEXT PROBLEM
 
 
@@ -345,6 +354,7 @@ var data = [
 //Create an empty array called users.
 
   //Code Here
+  var users = [];
 
 /*Now add three user objects to your users array. Each user object should 
 contain the following properties. name, email, password, username.*/
