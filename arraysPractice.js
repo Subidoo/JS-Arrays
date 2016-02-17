@@ -251,7 +251,8 @@ longer(arr1, arr2);
   //Code Here
  function both(foo, woo) {
   var newarr = [];
-    newarr = foo.concat(woo);
+  if(foo[i]===woo[i])
+    newarr.push([i]);
     return newarr;
  }
  both(arr1, arr2);
@@ -367,8 +368,23 @@ var user1 = {
     username: 'infiniateLoop'
 };
 
+var user2 = {
+    name: 'Kyle Prestgard',
+    email: 'ktprestgard@gmail.com',
+    password: 'goodStuff',
+    username: 'Subidoo'
+};
+
+var user3 = {
+    name: 'Jennifer Prestgard',
+    email: 'jenniferprestgard@gmail.com',
+    password: 'codingWee',
+    username: 'Wife'
+};
+
 //Your Code Here
 
+users.push(user1, user2, user3);
 /*Now you have a very common data structure. Twitter is a good use case.
 It's easy to imagine that your followers list on Twitter is an Array full or
 objects and those objects contain properties about the specific person you 
